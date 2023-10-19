@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+/* setting up a logo in navbar */
+
+.logo {
+  background: url("../public/images/logo.jpg") center center/cover;
+  width: 32px;
+  height: 34px;
+  margin: 1px 13px 1px 9px;
+}
+/* empty container for showing alert */
+
+.alert-container {
+  height: 120px;
+  margin-bottom: 19px;
+  background: transparent;
+}
+.realalert-container {
+  height: 62px;
+  margin-bottom: 19px;
+  background: transparent;
+  position: fixed;
+  top: 78px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* for setting background image of login page and managing its responsiveness also */
+
+.back-image {
+  width: 114rem;
+  height: 94vh;
+  position: relative;
+  left: -266px;
+  top: -21rem;
+  z-index: -1;
+  background: url("../public/images/login-back.jpg") no-repeat center
+    center/cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Media query for iPhone XR (375px width) */
+
+@media screen and (max-width: 1000px) {
+  .back-image {
+    background: url("../public/images/phnloginback.jpg") no-repeat center
+      center/cover; /* Adjust the background image for smaller screens */
+    width: 69vh;
+    height: 100vh;
+    position: relative;
+    left: -204px;
+    top: -386px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* for setting background image of SignUp page and managing its responsiveness also */
+
+.backsign-image {
+  width: 114rem;
+  height: 97vh;
+  position: relative;
+  left: -307px;
+  top: -31rem;
+  z-index: -1;
+  background: url("../public/images/phnloginback.jpg") center center/cover;
+}
+.back-container {
+  width: 1296px;
+  height: 57vh;
+  padding: 36px;
+  border: 6px solid white;
+  border-radius: 24px;
+}
+.login-over-contianer {
+  height: 276px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Media query for iPhone XR (375px width) */
+
+@media screen and (max-width: 1000px) {
+  .backsign-image {
+    background-image: url("../public/images/phnloginback.jpg") no-repeat center
+      center/cover; /* Adjust the background image for smaller screens */
+    width: 62vh;
+    height: 94vh;
+    position: relative;
+    left: -187px;
+    top: -487px;
+  }
+  .back-container {
+    width: 367px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* addnote background adjustment */
+
+.adback {
+  z-index: -1;
+  background: url("..//public/images/addnote.jpg") no-repeat center center/cover;
+  width: 99vw;
+  position: absolute;
+  left: -5px;
+  height: 97vh;
+  top: 82px;
+}
+#adform {
+  width: 1299px;
+  padding: 0px 101px 101px 107px;
+}
+.adh1 {
+  position: relative;
+  top: 33px;
+  left: 529px;
+  width: 224px;
+}
+.adinput {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.adpenlogo {
+  background: url("../public/images/pen.png") no-repeat center center/cover;
+  top: -40px;
+  left: 718px;
+  position: relative;
+  height: 105px;
+  width: 115px;
+}
+#adpagesizing {
+  padding: 1px 1px 115px 1px;
+}
+/* about section */
+.about-container {
+  height: 74rem;
+  width: 113rem;
+  padding: 48px 291px 64px 337px;
+  position: absolute;
+  top: 53px;
+  left: -9px;
+  background: url("../public/images/aboutback.jpg")no-repeat center center/cover;
+  /* background-size: 100%; */
+}
+@media screen and (max-width: 1000px) {
+  #adform {
+    width: 374px;
+    padding: 0px 53px 144px 33px;
   }
-  to {
-    transform: rotate(360deg);
+  .adpenlogo {
+    top: -49px;
+    left: 232px;
+  }
+  .adh1 {
+    left: 104px;
+  }
+  .adback {
+    z-index: -1;
+    background: url("../public/images/phnback.jpg") no-repeat center
+      center/cover;
+    width: 102vw;
+    position: absolute;
+    left: -8px;
+    height: 97vh;
+    top: 56px;
+  }
+  .about-container{
+    width: 71rem;
+    zoom: 34%;
+    height: 2353px;
+    font-size: 5rem;
+  
+  }
+  .abpara {
+    position: relative;
+    font-size: 28px;
+    width: 931px;
+    left: -197px;
+    top: 203px;
+  }
+  .realalert-container{
+    top: 130px;
   }
 }
+
+/* added note showcase correction */
+.size{
+  width: 326px;
+}
+.size2{
+  width: 326px;
+}
+.size3{
+  width: 268px;
+}
+
+
+/* show user */
+#user-info {
+  width: 68px;
+  height: 58px;
+}
+.showuser-details{
+  height: 66px;
+}
+.name{
+  margin: 0px 0px -2px 0px;
+}
+.email{
+  margin: 0px 0px -2px 0px;
+}
+/* correction of nav
+.navsizing{
+  height: 66px;
+} */
