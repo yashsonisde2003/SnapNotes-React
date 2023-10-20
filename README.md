@@ -2,8 +2,7 @@
 
 SnapNotes is an application that allows users to easily store and manage their notes securely. It offers basic note-taking functionalities, including creating, reading, updating, and deleting notes. Each user can create their own account to keep their notes separate and secure.
 
-![snapnotes](https://github.com/yashsonisde2003/SnapNotes-Raact/blob/main/public/images/demo.png)
-
+![snapnotes](https://github.com/yashsonisde2003/SnapNotes-Raact/blob/main/public/images/snapnotes_demo.png)
 ## Features
 
 - User account creation and authentication for secure access to notes.
