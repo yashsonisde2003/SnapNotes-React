@@ -4,7 +4,7 @@ const User = require("../models/user");
 const { body, validationResult } = require("express-validator");
 const bycrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const jwt_key = "yash.sde@2003";
+const jwt_key = "your_security_key";
 const fetchuser = require("../middleware/fetchuser");
 
 //login 1: create a user using: POST'/api/auth/createuser'. no login required
