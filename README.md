@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# SnapNotes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SnapNotes is an application that allows users to easily store and manage their notes securely. It offers basic note-taking functionalities, including creating, reading, updating, and deleting notes. Each user can create their own account to keep their notes separate and secure.
 
-## Available Scripts
+![snapnotes]()
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User account creation and authentication for secure access to notes.
+- Create, read, update, and delete notes.
+- Easy and intuitive user interface designed with React.js.
+- Secure storage of notes in a MongoDB database.
+- Backend API built with Node.js and Express.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following software installed before setting up SnapNotes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- MongoDB
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the SnapNotes repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```shell
+   git clone https://github.com/your-username/snapnotes.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+   ```shell
+   cd snapnotes
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the backend dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```shell
+   cd backend
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Install the frontend dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```shell
+   cd ../frontend
+   npm install
+   ```
 
-## Learn More
+### Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before running the application, you need to set up your configuration for the backend:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Create a `.env` file in the `backend` directory with the following variables and paste the path in the location of backend:
 
-### Code Splitting
+   ```env
+   PORT=3001
+   MONGODB_URI=your_mongodb_connection_string
+   SECRET_KEY=your_secret_key
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Replace `your_mongodb_connection_string` and `your_secret_key` with your MongoDB connection string and a secret key for JWT token generation.
 
-### Analyzing the Bundle Size
+### Running the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Start the backend and frontend development server by the preapplied script:
 
-### Making a Progressive Web App
+   ```shell
+   cd ../frontend
+   npm run both
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. The SnapNotes application should now be running at http://localhost:3000 in your browser and should be running on 5000.
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Sign up for an account or log in if you already have one.
+2. Start creating, reading, updating, and deleting your notes.
+3. Your notes are stored securely and privately in your account.
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you'd like to contribute to SnapNotes, please follow the [contributing guidelines](CONTRIBUTING.md).
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or issues, feel free to [contact us](yashrajsoni.sde2003@gmail.com).
+
+Happy note-taking with SnapNotes!``
